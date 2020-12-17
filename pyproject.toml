@@ -1,21 +1,23 @@
 [tool.poetry]
-name = "template"
-version = "0.3.1"
-description = "Python template with CI/CD ready for production"
+name = "comohay-api"
+version = "1.0.0"
+description = "API of [ComoHay](https://comohay.com) website implemented with [FastAPI](https://fastapi.tiangolo.com) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup)."
 authors = ["leynier <leynier41@gmail.com>"]
-homepage = "https://github.com/leynier/python-template"
-repository = "https://github.com/leynier/python-template"
-documentation = "https://github.com/leynier/python-template"
+homepage = "https://github.com/leynier/comohay-api"
+repository = "https://github.com/leynier/comohay-api"
+documentation = "https://github.com/leynier/comohay-api"
 readme = "README.md"
 license = "MIT"
 
 [tool.poetry.scripts]
-template = "template.main:app"
+comohay-api = "comohay_api.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 typer = "^0.3.2"
 fastapi = {extras = ["all"], version = "^0.62.0"}
+beautifulsoup4 = "^4.9.3"
+aiohttp = {extras = ["speedups"], version = "^3.7.3"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.1"

@@ -1,11 +1,9 @@
 from fastapi.testclient import TestClient
 
-from template.main import app
+from comohay_api.main import app
 
 client = TestClient(app)
 
 
-def test_template():
-    response = client.get("/")
-    assert response.status_code == 200
-    assert response.json() == {"message": "Hello World!"}
+def test_mock():
+    assert True

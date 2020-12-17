@@ -1,4 +1,4 @@
-# Python Template
+# ComoHay API
 
 ## Contributions are highly appreciated
 
@@ -24,7 +24,7 @@ We're using the following branches to manage work:
 
 ## How to report bugs
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/leynier/python-template/issues/new/choose); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/leynier/comohay-api/issues/new/choose); it's that easy!
 
 ### Write bug reports with detail, background, and sample code
 

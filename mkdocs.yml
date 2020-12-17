@@ -1,7 +1,7 @@
-site_name: Python Template
-site_url: https://leynier.github.io/python-template
-repo_url: https://github.com/leynier/python-template
-edit_uri: https://github.com/leynier/python-template/edit/main/docs
+site_name: ComoHay API
+site_url: https://leynier.github.io/comohay-api
+repo_url: https://github.com/leynier/comohay-api
+edit_uri: https://github.com/leynier/comohay-api/edit/main/docs
 
 theme:
   name: material

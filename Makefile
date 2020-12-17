@@ -31,19 +31,19 @@ update_index_and_commit: update_index
 	git push
 
 run: install
-	poetry run uvicorn template.main:app --reload --host ${HOST} --port ${PORT}
+	poetry run uvicorn comohay_api.main:app --reload --host ${HOST} --port ${PORT}
 
 build:
-	docker build -t template:latest .
+	docker build -t comohay-api:latest .
 
 deploy:
-	docker run -d -p 8000:80 --name template-container --env-file .env template:latest
+	docker run -d -p 8000:80 --name comohay-api-container --env-file .env comohay-api:latest
 
 rmcontainer:
-	docker container rm template-container --force
+	docker container rm comohay-api-container --force
 
 rmimage:
-	docker image rm template:latest
+	docker image rm comohay-api:latest
 
 build_deploy: build deploy
 

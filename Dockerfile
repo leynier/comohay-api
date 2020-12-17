@@ -4,4 +4,4 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY ./template /app/app
+COPY ./comohay_api /app/app
