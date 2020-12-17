@@ -4,7 +4,6 @@
 [![Test](https://github.com/leynier/comohay-api/workflows/CI/badge.svg)](https://github.com/leynier/comohay-api/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/leynier/comohay-api/branch/main/graph/badge.svg?token=Z1MEEL3EAB)](https://codecov.io/gh/leynier/comohay-api)
 [![DeepSource](https://deepsource.io/gh/leynier/comohay-api.svg/?label=active+issues)](https://deepsource.io/gh/leynier/comohay-api/?ref=repository-badge)
-[![Version](https://img.shields.io/pypi/v/comohay-api?color=%2334D058&label=Version)](https://pypi.org/project/comohay-api)
 [![Last commit](https://img.shields.io/github/last-commit/leynier/comohay-api.svg?style=flat)](https://github.com/leynier/comohay-api/commits)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/leynier/comohay-api)](https://github.com/leynier/comohay-api/commits)
 [![Github Stars](https://img.shields.io/github/stars/leynier/comohay-api?style=flat&logo=github)](https://github.com/leynier/comohay-api/stargazers)
