@@ -21,7 +21,7 @@ aiohttp = {extras = ["speedups"], version = "^3.7.3"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.3"
-flake8 = "^3.8.4"
+flake8 = "^3.9.1"
 black = "^21.4b2"
 isort = "^5.8.0"
 pytest-cov = "^2.10.1"
