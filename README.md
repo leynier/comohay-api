@@ -12,4 +12,4 @@
 [![Website](https://img.shields.io/website?up_message=online&url=https%3A%2F%2Fleynier.github.io/comohay-api)](https://leynier.github.io/comohay-api)
 [![GitHub contributors](https://img.shields.io/github/contributors/leynier/comohay-api)](https://github.com/leynier/comohay-api/graphs/contributors)
 
-API of [ComoHay](https://comohay.com) website implemented with [FastAPI](https://fastapi.tiangolo.com) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup).
+API of [ComoHay](https://comohay.com) web implemented with [FastAPI](https://fastapi.tiangolo.com) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup).
