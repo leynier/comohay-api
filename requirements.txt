@@ -184,9 +184,9 @@ email-validator==1.1.2; python_version >= "3.6" \
 fastapi==0.62.0; python_version >= "3.6" \
     --hash=sha256:62074dd38541d9d7245f3aacbbd0d44340c53d56186c9b249d261a18dad4874b \
     --hash=sha256:8f4c64cd9cea67fb7dd175ca5015961efa572b9f43a8731014dac8929d86225f
-graphene==2.1.8; python_version >= "3.6" \
-    --hash=sha256:09165f03e1591b76bf57b133482db9be6dac72c74b0a628d3c93182af9c5a896 \
-    --hash=sha256:2cbe6d4ef15cfc7b7805e0760a0e5b80747161ce1b0f990dfdc0d2cf497c12f9
+graphene==2.1.9; python_version >= "3.6" \
+    --hash=sha256:3d446eb1237c551052bc31155cf1a3a607053e4f58c9172b83a1b597beaa0868 \
+    --hash=sha256:b9f2850e064eebfee9a3ef4a1f8aa0742848d97652173ab44c82cc8a62b9ed93
 graphql-core==3.1.6; python_version >= "3.6" \
     --hash=sha256:c78d09596d347e1cffd266c5384abfedf43ed1eae08729773bebb3d527fe5a14 \
     --hash=sha256:e65975b6a13878f9113a1fa5320760585b522d139944e005936b1b8358d0651a
