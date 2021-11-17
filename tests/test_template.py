@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 
-from comohay_api.main import app
+from apis.main import app
 
 client = TestClient(app)
 
