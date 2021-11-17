@@ -10,7 +10,7 @@ readme = "README.md"
 license = "MIT"
 
 [tool.poetry.scripts]
-comohay-api = "apis.main:app"
+comohay-api = "api.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.8"

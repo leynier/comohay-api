@@ -4,4 +4,4 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY ./apis /app/app
+COPY ./api /app/app

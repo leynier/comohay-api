@@ -31,7 +31,7 @@ update_index_and_commit: update_index
 	git push
 
 run: install
-	poetry run uvicorn comohay_api.main:app --reload --host ${HOST} --port ${PORT}
+	poetry run uvicorn api.main:app --reload --host ${HOST} --port ${PORT}
 
 build:
 	docker build -t comohay-api:latest .
