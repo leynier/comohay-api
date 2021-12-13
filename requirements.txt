@@ -187,9 +187,9 @@ fastapi==0.62.0; python_version >= "3.6" \
 graphene==3.0; python_version >= "3.6" \
     --hash=sha256:57ce5ee7c9dc194224a1df96e4f7cb48d31eae96c791091d059f8f3d4d131390 \
     --hash=sha256:af48066e152200a071aac1e0b703954c717ec7268720ba190a0c91d9bcb0a122
-graphql-core==3.1.6; python_version >= "3.6" \
-    --hash=sha256:c78d09596d347e1cffd266c5384abfedf43ed1eae08729773bebb3d527fe5a14 \
-    --hash=sha256:e65975b6a13878f9113a1fa5320760585b522d139944e005936b1b8358d0651a
+graphql-core==3.1.7; python_version >= "3.6" \
+    --hash=sha256:9b460f60320be01c7f3b1766cf3e406933003008055079b9d983b8f3988f4400 \
+    --hash=sha256:62ec192150ccecd9a18cfb79e3e72eb7d1fd68fb594ef19c40099b6deec8ef0c
 graphql-relay==3.1.0; python_version >= "3.6" \
     --hash=sha256:2cda0ac0199dd56c28ca4f6e0381cdcf5787809c06d1507df3c2a738f9ad846f \
     --hash=sha256:70d5a7ee5995ea7c2a9a37e51227663b1a464f1f40e98fdde950be5415dfe0b4
