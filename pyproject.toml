@@ -15,7 +15,7 @@ comohay-api = "api.main:app"
 [tool.poetry.dependencies]
 python = "^3.8"
 typer = "^0.4.1"
-fastapi = {extras = ["all"], version = "^0.75.0"}
+fastapi = {extras = ["all"], version = "^0.75.1"}
 beautifulsoup4 = "^4.10.0"
 aiohttp = {extras = ["speedups"], version = "^3.8.1"}
 
