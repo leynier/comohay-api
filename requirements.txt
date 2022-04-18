@@ -190,9 +190,9 @@ graphene==3.0; python_version >= "3.6" \
 graphql-core==3.2.1; python_version >= "3.6" \
     --hash=sha256:9d1bf141427b7d54be944587c8349df791ce60ade2e3cccaf9c56368c133c201 \
     --hash=sha256:f83c658e4968998eed1923a2e3e3eddd347e005ac0315fbb7ca4d70ea9156323
-graphql-relay==3.1.5; python_version >= "3.6" \
-    --hash=sha256:127f40913f11cb847452ef794931261aae3b222eaaf976f7c8430298534e54d3 \
-    --hash=sha256:d1455316182e1017d06f0b4d4a2ce8bafad38253a6c7c5666fc80d5d516ee5c8
+graphql-relay==3.2.0; python_version >= "3.6" \
+    --hash=sha256:1ff1c51298356e481a0be009ccdff249832ce53f30559c1338f22a0e0d17250c \
+    --hash=sha256:c9b22bd28b170ba1fe674c74384a8ff30a76c8e26f88ac3aa1584dd3179953e5
 h11==0.9.0; python_version >= "3.6" \
     --hash=sha256:4bc6d6a1238b7615b266ada57e0618568066f57dd6fa967d1290ec9309b2f2f1 \
     --hash=sha256:33d4bca7be0fa039f4e84d50ab00531047e53d6ee8ffbc83501ea602c169cae1
