@@ -507,9 +507,9 @@ starlette==0.21.0; python_version >= "3.6" \
 typer==0.3.2; python_version >= "3.6" \
     --hash=sha256:ba58b920ce851b12a2d790143009fa00ac1d05b3ff3257061ff69dbdfc3d161b \
     --hash=sha256:5455d750122cff96745b0dec87368f56d023725a7ebc9d2e54dd23dc86816303
-typing-extensions==4.3.0; python_version >= "3.6" \
-    --hash=sha256:25642c956049920a5aa49edcdd6ab1e06d7e5d467fc00e0506c44ac86fbfca02 \
-    --hash=sha256:e6d2677a32f47fc7eb2795db1dd15c1f34eff616bcaf2cfb5e997f854fa1c4a6
+typing-extensions==4.4.0; python_version >= "3.6" \
+    --hash=sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa \
+    --hash=sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e
 ujson==5.5.0; python_version >= "3.6" \
     --hash=sha256:0762a4fdf86e01f3f8d8b6b7158d01fdd870799ff3f402b676e358fcd879e7eb \
     --hash=sha256:10095160dbe6bba8059ad6677a01da251431f4c68041bf796dcac0956b34f8f7 \
