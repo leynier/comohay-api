@@ -579,9 +579,9 @@ ujson==5.5.0; python_version >= "3.6" \
 urllib3==1.26.2; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" and python_version < "4" and python_version >= "3.6" \
     --hash=sha256:d8ff90d979214d7b4f8ce956e80f4028fc6860e4431f731ea4a8c08f23f99473 \
     --hash=sha256:19188f96923873c92ccb987120ec4acaa12f0461fa9ce5d3d0772bc965a39e08
-uvicorn==0.18.3; python_version >= "3.6" \
-    --hash=sha256:0abd429ebb41e604ed8d2be6c60530de3408f250e8d2d84967d85ba9e86fe3af \
-    --hash=sha256:9a66e7c42a2a95222f76ec24a4b754c158261c4696e683b9dadc72b590e0311b
+uvicorn==0.19.0; python_version >= "3.6" \
+    --hash=sha256:cc277f7e73435748e69e075a721841f7c4a95dba06d12a72fe9874acced16f6f \
+    --hash=sha256:cf538f3018536edb1f4a826311137ab4944ed741d52aeb98846f52215de57f25
 uvloop==0.17.0; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy" and python_version >= "3.6" \
     --hash=sha256:08b109f0213af392150e2fe6f81d33261bb5ce968a288eb698aad4f46eb711bd \
     --hash=sha256:4544dcf77d74f3a84f03dd6278174575c44c67d7165d4c42c71db3fdc3860726 \
