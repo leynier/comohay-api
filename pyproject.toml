@@ -23,7 +23,7 @@ aiohttp = {extras = ["speedups"], version = "^3.8.3"}
 pytest = "^7.2.0"
 flake8 = "^5.0.4"
 black = "^22.12"
-isort = "^5.11.2"
+isort = "^5.11.3"
 pytest-cov = "^4.0.0"
 
 [build-system]
