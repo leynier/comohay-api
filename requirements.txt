@@ -544,8 +544,9 @@ pydantic==1.10.5; python_version >= "3.6" \
     --hash=sha256:f582cac9d11c227c652d3ce8ee223d94eb06f4228b52a8adaafa9fa62e73d5c9 \
     --hash=sha256:f5bee6c523d13944a1fdc6f0525bc86dbbd94372f17b83fa6331aabacc8fd08e \
     --hash=sha256:f836444b4c5ece128b23ec36a446c9ab7f9b0f7981d0d27e13a7c366ee163f8a
-python-multipart==0.0.5; python_version >= "3.6" \
-    --hash=sha256:f7bb5f611fc600d15fa47b3974c8aa16e93724513b49b5f95c81e6624c83fa43
+python-multipart==0.0.6; python_version >= "3.6" \
+    --hash=sha256:e9925a80bb668529f1b67c7fdb0a5dacdd7cbfc6fb0bff3ea443fe22bdd62132 \
+    --hash=sha256:ee698bab5ef148b0a760751c261902cd096e57e10558e11aca17646b74ee1c18
 pyyaml==5.3.1; python_version >= "3.6" and python_full_version < "3.0.0" or python_version >= "3.6" and python_full_version >= "3.5.0" \
     --hash=sha256:74809a57b329d6cc0fdccee6318f44b9b8649961fa73144a98735b0aaf029f1f \
     --hash=sha256:240097ff019d7c70a4922b6869d8a86407758333f02203e0fc6ff79c5dcede76 \
