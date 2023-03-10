@@ -571,9 +571,9 @@ six==1.15.0; python_version >= "3.6" and python_full_version < "3.0.0" or python
 soupsieve==2.4; python_version >= "3.5" \
     --hash=sha256:49e5368c2cda80ee7e84da9dbe3e110b70a4575f196efb74e51b94549d921955 \
     --hash=sha256:e28dba9ca6c7c00173e34e4ba57448f0688bb681b7c5e8bf4971daafc093d69a
-starlette==0.25.0; python_version >= "3.6" \
-    --hash=sha256:774f1df1983fd594b9b6fb3ded39c2aa1979d10ac45caac0f4255cbe2acb8628 \
-    --hash=sha256:854c71e73736c429c2bdb07801f2c76c9cba497e7c3cf4988fde5e95fe4cdb3c
+starlette==0.26.0.post1; python_version >= "3.6" \
+    --hash=sha256:5b80b546ed60d43da45f80113c05ff9f4c44fae95ee884945958eba685c56253 \
+    --hash=sha256:af0e54d08afed70fcbc53ae01e71c9c62c8ab038ff8cfd3f7477bf0f086b5ab4
 typer==0.7.0; python_version >= "3.6" \
     --hash=sha256:b5e704f4e48ec263de1c0b3a2387cd405a13767d2f907f44c1a08cbad96f606d \
     --hash=sha256:ff797846578a9f2a201b53442aedeb543319466870fbe1c701eab66dd7681165
