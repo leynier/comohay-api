@@ -2,7 +2,7 @@ HOST = localhost
 PORT = 8000
 
 install:
-	uv sync
+	uv sync --all-groups --all-extras
 
 tests: install
 	uv run ruff check .
