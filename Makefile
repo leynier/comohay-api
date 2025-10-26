@@ -5,10 +5,13 @@ install:
 	uv sync
 
 tests: install
-	uv run flake8 . --count --show-source --statistics --max-line-length=88 --extend-ignore=E203 --exclude=.venv
-	uv run black . --check --exclude=.venv
-	uv run isort . --profile=black --skip=.venv
+	uv run ruff check .
+	uv run ruff format --check .
 	uv run pytest
+
+format: install
+	uv run ruff check --fix .
+	uv run ruff format .
 
 run: install
 	uv run uvicorn api.main:app --reload --host ${HOST} --port ${PORT}

@@ -1,5 +1,4 @@
 from os.path import join
-from typing import List, Optional
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -18,14 +17,14 @@ def index(request: Request):
     return RedirectResponse(join(request.url.path, "docs"))
 
 
-@api.get("/items", response_model=List[Item], tags=["General"])
+@api.get("/items", response_model=list[Item], tags=["General"])
 async def get_items(
     query: str,
     page: int = 1,
-    provinces: Optional[List[Province]] = Query(None),
-    price_from: Optional[int] = None,
-    price_to: Optional[int] = None,
-    price_currency: Optional[Currency] = None,
+    provinces: list[Province] | None = Query(None),
+    price_from: int | None = None,
+    price_to: int | None = None,
+    price_currency: Currency | None = None,
 ):
     items = await Scraper.get_items(
         query=query,
@@ -38,21 +37,21 @@ async def get_items(
     return items
 
 
-@api.get("/autocomplete", response_model=List[str], tags=["General"])
+@api.get("/autocomplete", response_model=list[str], tags=["General"])
 async def get_autocomplete(query: str):
     items = await Scraper.get_autocomplete(query=query)
     return items
 
 
-@api.get("/currencies", response_model=List[Currency], tags=["General"])
+@api.get("/currencies", response_model=list[Currency], tags=["General"])
 def get_currencies():
-    currencies = [currency for currency in Currency]
+    currencies = list(Currency)
     return currencies
 
 
-@api.get("/provinces", response_model=List[Province], tags=["General"])
+@api.get("/provinces", response_model=list[Province], tags=["General"])
 def get_provinces():
-    provinces = [province for province in Province]
+    provinces = list(Province)
     return provinces
 
 

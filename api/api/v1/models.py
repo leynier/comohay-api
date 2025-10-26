@@ -1,5 +1,4 @@
 from enum import Enum
-from typing import Optional
 
 from pydantic import BaseModel
 
@@ -33,5 +32,5 @@ class Item(BaseModel):
     url: str
     title: str
     location: str
-    price: Optional[str]
+    price: str | None
     description: str

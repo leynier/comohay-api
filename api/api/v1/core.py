@@ -1,4 +1,3 @@
-from typing import List, Optional
 from urllib.parse import urljoin
 
 from aiohttp import ClientSession
@@ -13,7 +12,7 @@ class Scraper:
     PARSER = "html.parser"
 
     @staticmethod
-    async def get_autocomplete(query: str) -> List[str]:
+    async def get_autocomplete(query: str) -> list[str]:
         async with ClientSession() as session:
             url = urljoin(Scraper.BASE_URL, "search/autocomplete")
             async with session.get(url, params={"q": query}) as response:
@@ -30,11 +29,11 @@ class Scraper:
     async def get_items(
         query: str,
         page: int,
-        provinces: Optional[List[Province]],
-        price_from: Optional[int],
-        price_to: Optional[int],
-        price_currency: Optional[Currency],
-    ) -> List[Item]:
+        provinces: list[Province] | None,
+        price_from: int | None,
+        price_to: int | None,
+        price_currency: Currency | None,
+    ) -> list[Item]:
         async with ClientSession() as session:
             url = urljoin(Scraper.BASE_URL, "")
             params = {"q": query, "page": page}
@@ -55,7 +54,7 @@ class Scraper:
                     )
                 soup = BeautifulSoup(await response.text(), Scraper.PARSER)
                 items = soup.find_all("div", class_="list-item-container")
-                result: List[Item] = []
+                result: list[Item] = []
                 for item in items:
                     header = item.find("div", class_="list-item-header")
                     source = header.find("span", class_="list-item-badge").text.strip()
@@ -128,5 +127,7 @@ class Scraper:
                     total = int(item.get_text().strip().split(" ")[0])
                 except Exception as e:
                     print(f"Exception: {e}")
-                    raise HTTPException(status_code=500, detail="Error getting total")
+                    raise HTTPException(
+                        status_code=500, detail="Error getting total"
+                    ) from e
                 return total
