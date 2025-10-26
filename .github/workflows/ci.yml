@@ -1,33 +1,30 @@
-name: CI
-on:
-  push:
-    branches: [ main, fastapi ]
-  pull_request:
-    branches: [ main, fastapi ]
+name: Tests
+on: [push, pull_request]
 jobs:
-  CI:
+  tests:
+    env:
+      UV_CACHE_DIR: /tmp/.uv-cache
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: ${{ github.event.pull_request.head.sha }}
-    - name: Set up Python 3.13
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.13
-    - name: Set up Poetry 2.1.0
-      uses: abatilo/actions-poetry@v2.1.0
-      with:
-        poetry-version: 1.1.2
-    - name: Run tests
-      run: make tests
-    - name: Upload coverage
-      uses: codecov/codecov-action@v1
-      # with:
-      #   token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-    - name: Report results to DeepSource
-      run: |
-        curl https://deepsource.io/cli | sh
-        ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml
-      env: 
-        DEEPSOURCE_DSN: ${{ secrets.DEEPSOURCE_DSN }}
+      - name: Clone the repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: "pyproject.toml"
+      - name: Set up uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Restore uv cache
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.uv-cache
+          key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+          restore-keys: |
+            uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+            uv-${{ runner.os }}
+      - name: Run tests
+        run: make tests
+      - name: Minimize uv cache
+        run: uv cache prune --ci
