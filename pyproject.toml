@@ -1,31 +1,40 @@
-[tool.poetry]
+[project]
 name = "comohay-api"
 version = "1.0.0"
 description = "API of [ComoHay](https://comohay.com) website implemented with [FastAPI](https://fastapi.tiangolo.com) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup)."
-authors = ["leynier <leynier41@gmail.com>"]
-homepage = "https://github.com/leynier/comohay-api"
-repository = "https://github.com/leynier/comohay-api"
-documentation = "https://github.com/leynier/comohay-api"
+authors = [
+    {name = "leynier", email = "leynier41@gmail.com"}
+]
 readme = "README.md"
-license = "MIT"
+license = {text = "MIT"}
+requires-python = ">=3.13"
+dependencies = [
+    "typer>=0.7.0",
+    "fastapi[all]>=0.110.0",
+    "beautifulsoup4>=4.11.2",
+    "aiohttp[speedups]>=3.8.4",
+]
 
-[tool.poetry.scripts]
+[project.urls]
+Homepage = "https://github.com/leynier/comohay-api"
+Repository = "https://github.com/leynier/comohay-api"
+Documentation = "https://github.com/leynier/comohay-api"
+
+[project.scripts]
 comohay-api = "api.main:app"
 
-[tool.poetry.dependencies]
-python = "^3.13"
-typer = "^0.7.0"
-fastapi = {extras = ["all"], version = "^0.110.0"}
-beautifulsoup4 = "^4.11.2"
-aiohttp = {extras = ["speedups"], version = "^3.8.4"}
+[dependency-groups]
+dev = [
+    "pytest>=7.2.2",
+    "flake8>=5.0.4",
+    "black>=23.1",
+    "isort>=5.12.0",
+    "pytest-cov>=4.0.0",
+]
 
-[tool.poetry.dev-dependencies]
-pytest = "^7.2.2"
-flake8 = "^5.0.4"
-black = "^23.1"
-isort = "^5.12.0"
-pytest-cov = "^4.0.0"
+[tool.hatch.build.targets.wheel]
+packages = ["api"]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"

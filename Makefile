@@ -2,16 +2,16 @@ HOST = localhost
 PORT = 8000
 
 install:
-	poetry install
+	uv sync
 
 tests: install
-	poetry run flake8 . --count --show-source --statistics --max-line-length=88 --extend-ignore=E203
-	poetry run black . --check
-	poetry run isort . --profile=black
-	poetry run pytest --cov=./ --cov-report=xml
+	uv run flake8 . --count --show-source --statistics --max-line-length=88 --extend-ignore=E203 --exclude=.venv
+	uv run black . --check --exclude=.venv
+	uv run isort . --profile=black --skip=.venv
+	uv run pytest --cov=./ --cov-report=xml
 
 export:
-	poetry export -f requirements.txt -o requirements.txt
+	uv export --no-hashes -o requirements.txt
 
 export_and_commit: export
 	git config --global user.name 'leynier'
@@ -31,7 +31,7 @@ update_index_and_commit: update_index
 	git push
 
 run: install
-	poetry run uvicorn api.main:app --reload --host ${HOST} --port ${PORT}
+	uv run uvicorn api.main:app --reload --host ${HOST} --port ${PORT}
 
 build:
 	docker build -t comohay-api:latest .
